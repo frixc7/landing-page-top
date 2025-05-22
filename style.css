@@ -14,6 +14,9 @@ a:link {
 #header {
     display: flex;
     flex-direction: column;
+    width: 70%; /* has to stay at 70% because full design doesn't have space on the sides */
+    margin: 0 auto;
+    border: green solid 3px;
 }
 
 .top, .bottom {
@@ -24,8 +27,6 @@ a:link {
 .top {
     justify-content: space-between;
     margin-top: 15px;
-    margin-left: 400px;
-    margin-right: 400px;
 }
 
 .top div {
@@ -45,18 +46,22 @@ a:link {
 
 /* The main part */
 .bottom {
-    margin: 50px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     justify-content: space-between;
+    border: 3px solid red;
+}
+
+.bottom img {
+    height: 250px;
+    width: 650px;
 }
 
 .bottom div {
     margin-right: 30px;
-}
-
-.bottom img {
-    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .bottom div h1 {
@@ -70,20 +75,18 @@ a:link {
     color: #E5E7EB;
 }
 
-.bottom h1, p, .cta {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .cta {
     background-color: #3882F6;
     display: inline-block;
-    padding: 10px;
-    width: 60%;
+    padding: 8px;
+    width: 25%;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .bottom a {
     font-weight: bold;
 }
+
+/* ------ SECTION 1 ENDS ------ */
+
